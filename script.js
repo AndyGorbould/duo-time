@@ -20,6 +20,11 @@ console.log(words);
 
 
 
+// random colour array
+randomColor = ["red", "blue", "green", "pink", "black", "orange"]
+
+
+
 // get button DOM element
 changeButton = document.getElementsByClassName("change-me")[0];
 // listen for click, run changeFunc
@@ -36,5 +41,7 @@ function changeFunc() {
     for (let i = 0; i < defineColumn.length; i++) {
 
         defineColumn[i].innerText = words[getRandomInt(3)];
+        //randomize colours
+        defineColumn[i].style.color = randomColor[getRandomInt(6)];
     }
 }
