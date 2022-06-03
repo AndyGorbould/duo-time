@@ -64,3 +64,13 @@ function changeFunc() {
         defineColumn[i].style.color = randomColor[getRandomInt(6)];
     }
 }
+
+
+
+////// colours
+
+let deleteButtonYellow = document.getElementsByClassName("is-warning")[0];
+deleteButtonYellow.remove();
+
+let deleteButtonGreen = document.getElementsByClassName("is-success")[0];
+deleteButtonGreen.remove();
